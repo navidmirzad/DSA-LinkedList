@@ -276,13 +276,17 @@ ll.addLast("D")
 
 //ll.insertBefore(1, "Z")
 //ll.insertAfter(1, "Z")
+
+
 ll.dumpList();
 
-// removes "D" from the LinkedList
+
 //ll.removeLast();
 //ll.removeFirst();
 //ll.remove(0);
+//ll.clear();
 //ll.dumpList();
+
 
 
 
