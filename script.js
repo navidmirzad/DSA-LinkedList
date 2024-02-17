@@ -24,7 +24,6 @@ const node1 = {
    node2.prev = node1
    node2.next = node3
    node3.prev = node2  */
-  
 
 class Node {
     constructor(prev, next, nodeData) {
@@ -277,9 +276,7 @@ ll.addLast("D")
 //ll.insertBefore(1, "Z")
 //ll.insertAfter(1, "Z")
 
-
 ll.dumpList();
-
 
 //ll.removeLast();
 //ll.removeFirst();
