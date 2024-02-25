@@ -325,59 +325,6 @@ class LinkedList {
   }
 }
 
-/*  // swaps two nodes Data // method call looks like this: ll.swapNodes("2", "4");
-  swapNodesData(nodeDataA, nodeDataB) {
-    // Nothing to do if nodeDataA and nodeDataB are the same
-    if (nodeDataA === nodeDataB) return;
-
-    // Search for nodeDataA (keep track of prevNodeA and currNodeA)
-    let prevNodeA = null;
-    let currNodeA = this.head;
-    while (currNodeA !== null && currNodeA.nodeData !== nodeDataA) {
-      prevNodeA = currNodeA;
-      currNodeA = currNodeA.next;
-    }
-
-    // Search for nodeDataB (keep track of prevNodeB and currNodeB)
-    let prevNodeB = null;
-    let currNodeB = this.head;
-    while (currNodeB !== null && currNodeB.nodeData !== nodeDataB) {
-      prevNodeB = currNodeB;
-      currNodeB = currNodeB.next;
-    }
-
-    // If either nodeDataA or nodeDataB is not present, nothing to do
-    if (currNodeA === null || currNodeB === null) return;
-
-    // If nodeDataA is not head of linked list
-    if (prevNodeA !== null) prevNodeA.next = currNodeB;
-    // make nodeDataB the new head
-    else this.head = currNodeB;
-
-    // If nodeDataB is not head of linked list
-    if (prevNodeB !== null) prevNodeB.next = currNodeA;
-    // make nodeDataA the new head
-    else this.head = currNodeA;
-
-    // Swap next pointers
-    let temp = currNodeA.next;
-    currNodeA.next = currNodeB.next;
-    currNodeB.next = temp;
-
-    // Update prev pointers if nodes are adjacent
-    if (currNodeA.next !== null) currNodeA.next.prev = currNodeA;
-    if (currNodeB.next !== null) currNodeB.next.prev = currNodeB;
-
-    // Update prev pointers of nodeDataA and nodeDataB
-    temp = currNodeA.prev;
-    currNodeA.prev = currNodeB.prev;
-    currNodeB.prev = temp;
-
-    // Update tail pointer if necessary
-    if (this.tail === currNodeA) this.tail = currNodeB;
-    else if (this.tail === currNodeB) this.tail = currNodeA;
-  } */
-
 const ll = new LinkedList();
 ll.addLast("1");
 ll.addLast("2");
@@ -391,14 +338,3 @@ ll.dumpList();
 console.log("Swapping node2 and node4: ");
 ll.swapNodes("2", "4");
 ll.dumpList();
-
-//ll.addFirst("Z")
-
-//ll.insertBefore(1, "Z")
-//ll.insertAfter(1, "Z")
-
-//ll.removeLast();
-//ll.removeFirst();
-//ll.removeAtIndex(0);
-//ll.clear();
-//ll.dumpList();
